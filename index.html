@@ -64,7 +64,7 @@
                   <span class="author-block">
                     <a href="https://intra.ece.ucr.edu/~cong/" target="_blank">Cong Liu</a><sup>*</sup>,</span>
                     <span class="author-block">
-                      <a href="https://yuedong.netlify.app/" target="_blank">Yue Dong</a><sup>*</sup></span>                    
+                      <a href="https://yuedong.us/" target="_blank">Yue Dong</a><sup>*</sup></span>                    
                   </div>
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">University of California, Riverside<sup>*</sup>, Microsoft<sup>#</sup><br></span>
@@ -191,6 +191,7 @@
           </center>
           <div class="level-set has-text-justified">
             <p>
+              Our Contributions are: 
               <ol>
               <li><strong>NLP Tasks Have Different Levels of Safety Alignment:</strong> We designed a novel setup using NLP task prompts and safety-sensitive documents, creating a dataset of 6,985 articles from adversarial attacks, to test whether different NLP tasks have varying levels of safety alignment. We found that tasks like summarization have notably lower safety alignment compared to translation or QA tasks. <br>
               <li><strong>Weakly Aligned NLP Tasks as In-Context Attacks:</strong> The varying safety alignments among NLP tasks present a vulnerability. We discovered that performing weakly aligned NLP task first increases the likelihood of LLMs processing safety-sensitive documents for other tasks. This effect is further amplified when combining multiple weakly-aligned tasks. <br>
@@ -215,7 +216,7 @@
           </center>
           <div class="level-set has-text-justified">
             <p>
-               main result.
+               Main results: NLP tasks have different levels of safety alignment on safety-sensitive (SS) documents. These safety-sensitive documents are obtained by adversarial attacks on LLMs based on malicious prompt from AdvBench. 
             </p>
           </div>
         </div>
@@ -227,7 +228,7 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">GPT4 Example</h2>
+      <h2 class="title is-3"> In-Context Attack with Summarization on GPT4</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
@@ -240,6 +241,12 @@
           <source src="./static/videos/GPT4-example.mp4"
                   type="video/mp4">
         </video>
+           </center>
+          <div class="level-set has-text-justified">
+            <p>
+               In this example, GPT-4 initially refuses to translate the SS document concerning abuse. However, after processing a summarization first, it changes its mind and becomes willing to translate the document. In this case, the summarization task serves as an in-context attack, weakening the safety alignment of the translation task.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -252,7 +259,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Llama2 Example</h2>
+      <h2 class="title is-3">In-Context Attack with Summarization on Llama2</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted height="70%">
@@ -315,8 +322,6 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
         </div>
