@@ -201,53 +201,45 @@
   </div>
 </section>
 
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">GPT4 Example</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video">
-            <iframe src="https://youtu.be/HEyTckgi2LI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+        <video id="replay-video"
+              controls
+              muted
+              preload
+              playsinline
+              width="70%">
+          <source src="./static/videos/GPT4-example.mp4"
+                  type="video/mp4">
+        </video>
         </div>
       </div>
     </div>
   </div>
 </section> -->
-<!-- End youtube video -->
+<!-- End youtube video
 
-
-<h2 class="title is-3">GPT4 Example</h2>
-<div class="content has-text-centered">
-  <video id="replay-video"
-         controls
-         muted
-         preload
-         playsinline
-         width="70%">
-    <source src="./static/videos/GPT4-example.mp4"
-            type="video/mp4">
-  </video>
-</div>
 
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Llama2 Example</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel" class="carousel results-carousel" height="70%">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted height="50%">
+          <video poster="" id="video1" autoplay controls muted height="100%">
             <!-- Your video file here -->
             <source src="static/videos/llama2-13b-example1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted height="50%">
+          <video poster="" id="video2" autoplay controls muted height="100%">
             <!-- Your video file here -->
             <source src="static/videos/llama2-13b-example2.mp4"
             type="video/mp4">
