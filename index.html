@@ -172,7 +172,11 @@
           </center>
           <div class="level-set has-text-justified">
             <p>
-               main figures.
+              <ol>
+              <li><strong>NLP Tasks Have Different Levels of Safety Alignment:</strong> We designed a novel setup using NLP task prompts and safety-sensitive documents, creating a dataset of 6,985 articles from adversarial attacks, to test whether different NLP tasks have varying levels of safety alignment. We found that tasks like summarization have notably lower safety alignment compared to translation or QA tasks. <br>
+              <li><strong>Weakly Aligned NLP Tasks as In-Context Attacks:</strong> The varying safety alignments among NLP tasks present a vulnerability. We discovered that performing weakly aligned NLP task first increases the likelihood of LLMs processing safety-sensitive documents for other tasks. This effect is further amplified when combining multiple weakly-aligned tasks. <br>
+              <li><strong>Vulnerability Cause Investigation:</strong> Our experiments indicate that safety alignment discrepancies in NLP tasks stem from an imbalanced trade-off between the usefulness from instruction tuning and the safety of alignment. Our ablation study reveals that summarization attacks are more frequently blocked on shorter documents than longer ones, possibly due to a prevalence of shorter documents in safety alignment. These findings are crucial for enhancing safety alignment research and building stronger defenses.
+              </ol>
             </p>
           </div>
         </div>
@@ -186,7 +190,7 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
-          <h2 class="title is-3">Task Process Rate Result</h2>
+          <h2 class="title is-3">Task Process Rate Result on Safety-Sentitive Documents</h2>
           <center>
           <img src="static/images/radio-merge-use.png" alt="Safety Alignment NLP" class="center-image blend-img-background"/>
           </center>
