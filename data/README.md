@@ -1,6 +1,6 @@
 # data
 
-We have discovered that the malicious textual documents we constructed in our dataset (obtained by attacking LLMs with malicious queries), for example, contain information that can be blocked or detected as viruses by antivirus software (see below). Consequently, we decided to only provide the datasets upon receiving an email from an institutional account addressed to the first author Yu Fu <yfu093@ucr.edu>. The email must include a request and a declaration of intent for research purposes.
+We have discovered that the malicious textual documents we constructed in our dataset (obtained by attacking LLMs with malicious queries, avg. length 1520 tokens per document), for example, contain information that can be blocked or detected as viruses by antivirus software (see below). Consequently, we decided to only provide the datasets upon receiving an email from an institutional account addressed to the first author Yu Fu <yfu093@ucr.edu>. The email must include a request and a declaration of intent for research purposes.
 
 ![](./blocked.png)
 
